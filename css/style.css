@@ -1,1 +1,94 @@
-/* Add styles here */
+/*
+Colors used: 
+Black headlines: #232323;
+Background color: #EEE6DD;
+Primary color (yellow): #FDBF1E;
+Secondary color (light orange): #EE653A;
+Secondary color (dark orange): #E93621;
+Secondary color (light pink): #F17B98;
+Secondary color (dark pink): #ED047C;
+*/
+
+body{
+    background-color: #EEE6DD;
+    font-family: "Zilla Slab";
+    color: #232323;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.54px;
+}
+
+h1{
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+}
+
+h2{
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+}
+
+img {
+    width: 100%;
+  }
+
+  a {
+    color: #232323;
+    text-decoration: none; /* No underlining */
+  }
+a:focus {
+  color: #ff7f50;
+  text-decoration: underline;
+}
+a:visited { /* visited link */
+    color: #E93621;
+  }
+  a:hover {
+    color: #ED047C;
+    text-decoration: underline;
+  }
+  a:active { /* selected link */
+    color: #FDBF1E;
+  }
+  .primary-button{
+    color: var(--Black, #232323);
+    font-family: Lexend;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    margin: 8px, 4px, 8px, 4px;
+    background: rgba(255, 255, 255, 0.50);
+  }
+  .secondary-button{
+    display: inline-flex;
+    padding: 6px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    background: var(--Orange---Light, #FDBF1E);
+  }
+  .tertiary-button{
+    color: var(--Black, #232323);
+    font-family: "Zilla Slab";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.24px;
+  }
+
+  ul{
+    list-style: none;
+  }

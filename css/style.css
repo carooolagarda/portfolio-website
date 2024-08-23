@@ -1,5 +1,5 @@
 /*
-Colors used: 
+Colors used:
 Black headlines: #232323;
 Background color: #EEE6DD;
 Primary color (yellow): #FDBF1E;
@@ -40,26 +40,8 @@ h3{
 
 img {
     width: 100%;
-  }
-
-  a {
-    color: #232323;
-    text-decoration: none; /* No underlining */
-  }
-a:focus {
-  color: #ff7f50;
-  text-decoration: underline;
 }
-a:visited { /* visited link */
-    color: #E93621;
-  }
-  a:hover {
-    color: #ED047C;
-    text-decoration: underline;
-  }
-  a:active { /* selected link */
-    color: #FDBF1E;
-  }
+
   .primary-button{
     color: var(--Black, #232323);
     font-family: Lexend;
@@ -68,27 +50,49 @@ a:visited { /* visited link */
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.48px;
-    margin: 8px, 4px, 8px, 4px;
-    background: rgba(255, 255, 255, 0.50);
-  }
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    transition: all 0.5s;
+    border-radius: 44px;   
+    text-decoration: none; /* Añadido para quitar el subrayado */
+}
+
+  .primary-button:hover{
+    background: rgba(255, 255, 255, .5);
+    transition: all 0.5;
+}
+
   .secondary-button{
-    display: inline-flex;
-    padding: 6px 20px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 30px;
-    background: var(--Orange---Light, #FDBF1E);
-  }
+    border-radius: 44px;
+    border: 2px solid #000;
+    background: var(--Yellow, #FDBF1E);
+        padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-decoration: none; /* Añadido para quitar el subrayado */
+}
+
+  .secondary-button:hover{
+    background: rgba(238, 179, 28)
+}
   .tertiary-button{
     color: var(--Black, #232323);
     font-family: "Zilla Slab";
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     letter-spacing: 0.24px;
-  }
+    text-decoration: none; /* Añadido para quitar el subrayado */
+}
 
   ul{
     list-style: none;
-  }
+}
+
+  .nav-btn{
+    display: inline-block;
+    margin: 10px;
+},

@@ -78,6 +78,18 @@ img {
   .secondary-button:hover{
     background: rgba(238, 179, 28)
 }
+
+  #secondary-button {/* id selector */
+    border-radius: 44px;
+    border: 2px solid #000;
+    background: #F17B98;
+        padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-decoration: none; /* Añadido para quitar el subrayado */
+}
+
   .tertiary-button{
     color: var(--Black, #232323);
     font-family: "Zilla Slab";

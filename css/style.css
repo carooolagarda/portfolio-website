@@ -9,6 +9,25 @@ Secondary color (light pink): #F17B98;
 Secondary color (dark pink): #ED047C;
 */
 
+header{
+  background-image: url('img/gradient.jpg'); /* Path to your background image */
+  background-size: cover; /* Make sure the image covers the entire header */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  height: 300px; /* Adjust height as needed */
+  color: white; /* Text color */
+  display: flex; /* Center content horizontally */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content horizontally */
+  text-align: center; /* Center text */
+  padding: 60px,60px,0px,60px;
+  margin-bottom: 320px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body{
     background-color: #EEE6DD;
     font-family: "Zilla Slab";
@@ -21,9 +40,13 @@ body{
 }
 
 h1{
-    font-size: 32px;
-    font-weight: 700;
-    letter-spacing: 0.78px;
+  color: var(--Black, #232323);
+  font-family: Lexend;
+  font-size: 78px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
 }
 
 h2{
@@ -40,6 +63,11 @@ h3{
 
 img {
     width: 100%;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
 }
 
   .primary-button{

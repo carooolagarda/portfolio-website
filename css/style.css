@@ -10,20 +10,26 @@ Secondary color (dark pink): #ED047C;
 */
 
 header{
-  background-image: url('img/gradient.jpg'); /* Path to your background image */
+  background-color: #EEE6DD;
+  background-image: url(img/gradient.jpeg); /* Path to your background image */
   background-size: cover; /* Make sure the image covers the entire header */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  height: 300px; /* Adjust height as needed */
+  height: 100px; /* Adjust height as needed */
   color: white; /* Text color */
-  display: flex; /* Center content horizontally */
+  display: inline-block; /* Center content horizontally */
   align-items: center; /* Center content horizontally */
   justify-content: center; /* Center content horizontally */
   text-align: center; /* Center text */
-  padding: 60px,60px,0px,60px;
-  margin-bottom: 320px;
+  padding: 28px;
+  position: fixed;
+  box-shadow: 2px 2px 4px 0px #C5B9AC;
 }
 
+main{
+  padding-top: 400px;
+  padding-bottom: 24px;
+}
 * {
   box-sizing: border-box;
 }
@@ -39,10 +45,15 @@ body{
     letter-spacing: 0.54px;
 }
 
+footer{
+  border-top: 2.8px solid var(--Black, #232323);
+  background: var(--Yellow, #FDBF1E);
+}
+
 h1{
   color: var(--Black, #232323);
   font-family: Lexend;
-  font-size: 78px;
+  font-size: 26px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -50,14 +61,19 @@ h1{
 }
 
 h2{
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: 0.78px;
+  color: var(--Black, #232323);
+  font-family: "Zilla Slab";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.16px;
 }
 
 h3{
-    font-size: 24px;
-    font-weight: 700;
+    font-family: Lexend;
+    font-size: 18px;
+    font-weight: 500;
     letter-spacing: 0.78px;
 }
 
@@ -65,21 +81,20 @@ img {
     width: 100%;
 }
 
-/* Layout styling */
 .container {
-  padding: 0 15px;
+  padding: 0 16px;
 }
 
   .primary-button{
     color: var(--Black, #232323);
     font-family: Lexend;
-    font-size: 24px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.48px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     padding-top: 4px;
     padding-bottom: 4px;
     transition: all 0.5s;
@@ -95,7 +110,10 @@ img {
   .secondary-button{
     border-radius: 44px;
     border: 2px solid #000;
-    background: var(--Yellow, #FDBF1E);
+    font-family: Zilla Slab;
+    font-size: 16px;
+    font-weight: 400;
+    background: var(--Pink, #F17B98);
         padding-left: 16px;
     padding-right: 16px;
     padding-top: 4px;
@@ -121,18 +139,35 @@ img {
   .tertiary-button{
     color: var(--Black, #232323);
     font-family: "Zilla Slab";
-    font-size: 20px;
+    font-size: 12px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.24px;
     text-decoration: none; /* Añadido para quitar el subrayado */
 }
 
   ul{
     list-style: none;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
 }
 
   .nav-btn{
+    font-size: 14px;
     display: inline-block;
-    margin: 10px;
+    margin: 4px;
+}
+
+.center {
+  text-align: center;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
 },
+

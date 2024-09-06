@@ -30,7 +30,9 @@ header{
 main{
   padding-top: 400px;
   padding-bottom: 24px;
+  flex: 1;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -44,6 +46,7 @@ body{
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.54px;
+    flex: 1;
 }
 
 footer{
@@ -84,6 +87,9 @@ img {
 
 .container {
   padding: 0 16px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
   .primary-button{
@@ -104,8 +110,14 @@ img {
 }
 
   .primary-button:hover{
-    background: rgba(255, 255, 255, .5);
-    transition: all 0.5;
+ color: #F17B98;
+ opacity: 0.8;
+}
+
+  .primary-button:active{
+  background-color: white;
+  padding: 4px var(--Spacing, 16px);
+  border-radius: 44px;
 }
 
   .secondary-button{
@@ -119,6 +131,8 @@ img {
     padding-right: 16px;
     padding-top: 4px;
     padding-bottom: 4px;
+    transition: all 0.5s;
+    transition-property: opacity;
     text-decoration: none; /* Añadido para quitar el subrayado */
 }
 
@@ -134,6 +148,8 @@ img {
     padding-right: 16px;
     padding-top: 4px;
     padding-bottom: 4px;
+    transition-property: opacity;
+    transition: all 0.5s;
     text-decoration: none; /* Añadido para quitar el subrayado */
 }
 
@@ -144,9 +160,13 @@ img {
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0.24px;
+    transition: all 0.5s;
     text-decoration: none; /* Añadido para quitar el subrayado */
 }
 
+  .tertiary-button:hover{
+    opacity: 0.8;
+  }
   ul{
     list-style: none;
     margin-block-end: 16px;
@@ -172,10 +192,45 @@ nav > ul {
   padding: 0;
 }
 
+.row{
+  margin: 25px 0;
+}
+
 .row::after {
   content: "";
   clear: both;
   display: table;
+}
+
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+
+.sun{
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front{
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+cloud-back{
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 @media only screen and (min-width: 640px) {
@@ -199,9 +254,17 @@ nav > ul {
     width: 50%;
     }
 
+  .col-md-4 {
+    width: 40%;
+  }
+
+  .col-md-6 {
+    width: 60%;
+  }
+
   [class*="col-"] {
     float: left;
-    padding: 10px;
+    padding: 8px;
   }
 }
 
@@ -228,7 +291,7 @@ nav > ul {
 
   [class*="col-"] {
     float: left;
-    padding: 10px;
+    padding: 8px;
   }
 }
 
@@ -255,6 +318,6 @@ nav > ul {
 
   [class*="col-"] {
     float: left;
-    padding: 10px;
+    padding: 8px;
   }
 },

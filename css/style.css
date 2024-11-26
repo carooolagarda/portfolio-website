@@ -15,7 +15,7 @@ header{
 }
 
 main{
-  padding-top: 400px;
+  padding-top: 100px;
   padding-bottom: 24px;
   flex: 1;
   background-color: #EEE6DD;
@@ -68,24 +68,63 @@ h1{
 h2{
   color: var(--Black, #232323);
   font-family: "Zilla Slab";
-  font-size: 16px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.16px;
+  margin-block-end: 8px;
+  margin-block-start: 8px;
 }
 
 h3{
   font-family: Lexend;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 300;
   letter-spacing: 0.78px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 h4{
   font-family: Lexend;
   font-size: 14px;
   font-weight: 500;
+}
+
+h5{
+  color: var(--Black, #232323);
+  font-family: "Zilla Slab";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.16px;
+  margin-block-end: 16px;
+  margin-block-start: 80px;
+}
+
+h6{
+  color: var(--Black, #232323);
+  font-family: Lexend;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+  margin-block-end: 8px;
+  margin-block-start: 8px;
+}
+
+h7{
+  color: var(--Black, #232323);
+  font-family: Lexend;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+  padding-top: 40px;
 }
 
 img {
@@ -100,6 +139,27 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 780;
+}
+
+.flex-container {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.oppening-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .primary-button{
@@ -124,6 +184,48 @@ img {
 .activenav-btn{
   background-color: white;
   border-radius: 44px;
+}
+
+.title{
+  color: var(--Black, #232323);
+  font-family: Lexend;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.subtitle{
+  color: var(--Black, #232323);
+  font-family: Lexend;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+  padding-top: 100px;
+  max-width: 1200px;
+  display: flex;
+  text-align: left;
+  width: 780;
+}
+
+.cs-subtitle{
+  color: var(--Black, #232323);
+  font-family: Lexend;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+  padding-top: 24px;
+  max-width: 1200px;
+  display: flex;
+  text-align: left;
+  width: 780;
 }
 
 .secondary-button{
@@ -211,7 +313,7 @@ nav > ul {
 }
 
 .row{
-  margin: 25px 0;
+  margin: 8px 0;
 }
 
 .row::after {
@@ -227,6 +329,10 @@ nav > ul {
 .social img{
   height: 40px;
   width: auto;
+}
+
+.profile img{
+  width: 200px;
 }
 
 @keyframes color-change {
@@ -260,7 +366,116 @@ cloud-back{
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+@media only screen and (min-width: 460px) {
+
+  .flex-container {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .oppening-container {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .primary-button{
+    font-size: 16px
+  }
+
+  .col-md-5 {
+    width: 50%;
+    }
+
+  .col-md-4 {
+    width: 40%;
+  }
+
+  .col-md-6 {
+    width: 60%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 8px;
+  }
+}
+
+@media only screen and (min-width: 586px) {
+
+  .flex-container {
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .oppening-container {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .primary-button{
+    font-size: 16px
+  }
+
+  .col-md-5 {
+    width: 50%;
+    }
+
+  .col-md-4 {
+    width: 40%;
+  }
+
+  .col-md-6 {
+    width: 60%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 8px;
+  }
+}
+
 @media only screen and (min-width: 640px) {
+
+  .flex-container {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .oppening-container {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
   .primary-button{
     font-size: 16px
   }
@@ -284,6 +499,26 @@ cloud-back{
 }
 
 @media only screen and (min-width: 1024px) {
+  
+  .flex-container {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .oppening-container {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
 
   .primary-button{
     font-size: 16px
@@ -295,12 +530,32 @@ cloud-back{
 
   [class*="col-"] {
     float: left;
-    padding: 8px;
+    padding: 12px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
 
+  .flex-container {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .oppening-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
   .primary-button{
     font-size: 16px
   }
@@ -311,6 +566,6 @@ cloud-back{
 
   [class*="col-"] {
     float: left;
-    padding: 8px;
+    padding: 16px;
   }
 },

@@ -392,6 +392,10 @@ cloud-back{
     font-size: 16px
   }
 
+  .secondary-button{
+    font-size: 14px
+  }
+
   .col-md-5 {
     width: 50%;
     }

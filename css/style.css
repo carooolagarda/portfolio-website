@@ -55,6 +55,21 @@ footer{
   justify-content: center; /* Center the items */
 }
 
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
 h1{
   color: var(--Black, #232323);
   font-family: Lexend;
@@ -304,13 +319,18 @@ ul{
 }
 
 .logo {
-  max-width: 100px;
+  max-width: 150px;
 }
 
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
+
+.navtoggle li:not(:last-child) {
+  display: none;
+} 
 
 .row{
   margin: 8px 0;
@@ -480,6 +500,18 @@ cloud-back{
     flex-direction: column;
   }
 
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
   .primary-button{
     font-size: 16px
   }
@@ -503,7 +535,7 @@ cloud-back{
 }
 
 @media only screen and (min-width: 1024px) {
-  
+
   .flex-container {
     max-width: 720px;
     margin-left: auto;

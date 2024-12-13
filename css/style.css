@@ -408,6 +408,10 @@ cloud-back{
     flex-direction: column;
   }
 
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  
   .primary-button{
     font-size: 16px
   }
@@ -454,6 +458,10 @@ cloud-back{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
   }
 
   .primary-button{
@@ -556,6 +564,10 @@ cloud-back{
     flex-direction: column;
   }
 
+  .navtoggle li:last-child {
+    display: none;
+  }
+
   .primary-button{
     font-size: 16px
   }
@@ -590,6 +602,10 @@ cloud-back{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   .primary-button{

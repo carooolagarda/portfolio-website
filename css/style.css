@@ -59,29 +59,30 @@ nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  justify-content: space-between;
 }
 
-nav > ul > li > a{
+nav > ul > li > a {
   padding: 0 15px;
   font-weight: 400;
-  color: #243642;
+  color: #232323;
   text-decoration: none;
 }
 
 nav > ul > li > a:hover{
   padding: 0 15px;
   font-weight: 600;
+  color: #f76414;
   text-decoration: none;
-  color: #f76414
 }
 
 .navtoggle li:not(:last-child) {
   display: none;
-}
+  justify-content: space-between;
+} 
 
 .navtoggle, .navtoggle.responsive {
   position: relative;
+  justify-content: space-between;
 }
 
 .navtoggle li .icon {
@@ -91,19 +92,23 @@ nav > ul > li > a:hover{
   font-size: 20px;
   color: #232323;
   padding-right: 0;
+  justify-content: space-between;
 }
 
 .navtoggle.responsive li  {
   display: block;
-  padding: 10px 0;
+  padding: 4px;
+  justify-content: space-between;
 }
 
 .navtoggle.responsive nav{
-  padding: 24px 0 0;
+  padding: 8px 0 0;
+  justify-content: space-between;
 }
 
 .navtoggle.responsive li:last-child{
   padding: 0 0 10px;
+  justify-content: space-between;
 }
 
 h1{
@@ -221,7 +226,7 @@ img {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.48px;
-  padding: 10px var(--Spacing, 16px);
+  padding: 4px var(--Spacing, 16px);
   transition: all 0.5s;
   border-radius: 44px;   
   text-decoration: none; /* Añadido para quitar el subrayado */
@@ -235,7 +240,6 @@ img {
 .activenav-btn{
   background-color: white;
   border-radius: 44px;
-  padding: 10px;
 }
 
 .title{
@@ -337,7 +341,7 @@ ul{
 .nav-btn{
   font-size: 14px;
   display: inline-block;
-  margin: 0px;
+  margin: 4px;
 }
 
 .menu {
@@ -435,15 +439,10 @@ cloud-back{
     flex-direction: column;
   }
 
-  .activenav-btn{
-  background-color: white;
-  border-radius: 44px;
-  padding: 10px;
-}
-
   nav{
     width: auto;
     float: right;
+    maring-top: 4px
   }
 
   nav > ul {
@@ -451,15 +450,21 @@ cloud-back{
   }
 
   nav > ul > li{
-  display: inline-block;
+    display: inline-block;
   }
-  
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
+    justify-content: space-between;
   }
 
   .navtoggle li:last-child {
     display: none;
+    justify-content: space-between;
+  }
+
+  .primary-button{
+    font-size: 16px
   }
 
   .col-md-5 {
@@ -490,12 +495,13 @@ cloud-back{
     justify-content: space-between;
     flex-direction: column;
   }
-  
+
   nav{
     width: auto;
     float: right;
+    margin-top: 4px;
   }
-
+  
   .oppening-container {
     max-width: 900px;
     margin-left: auto;
@@ -505,6 +511,11 @@ cloud-back{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+    justify-content: space-between;
   }
 
   .primary-button{
@@ -520,4 +531,3 @@ cloud-back{
     padding: 12px;
   }
 }
-},

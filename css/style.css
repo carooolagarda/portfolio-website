@@ -1,24 +1,24 @@
 /*
 Colors used:
 Black headlines: #232323;
-Background color: #EEE6DD;
-Primary color (yellow): #FDBF1E;
-Secondary color (light orange): #EE653A;
-Secondary color (dark orange): #E93621;
-Secondary color (light pink): #F17B98;
-Secondary color (dark pink): #ED047C;
+Background color: #eee6dd;
+Primary color (yellow): #fdbf1e;
+Secondary color (light orange): #ee653a;
+Secondary color (dark orange): #e93621;
+Secondary color (light pink): #f17b98;
+Secondary color (dark pink): #ed047c;
 */
 
-header{
+header {
   height: 100px;
-  background-color: #EEE6DD;
+  background-color: #eee6dd;
 }
 
-main{
+main {
   padding-top: 100px;
   padding-bottom: 24px;
   flex: 1;
-  background-color: #EEE6DD;
+  background-color: #eee6dd;
 }
 
 * {
@@ -27,10 +27,10 @@ main{
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;  
+  background-size: cover;
 }
 
-body{
+body {
   font-family: "Zilla Slab";
   color: #232323;
   font-size: 20px;
@@ -39,12 +39,12 @@ body{
   line-height: normal;
   letter-spacing: 0.54px;
   flex: 1;
-  background-color: #EEE6DD;
+  background-color: #eee6dd;
 }
 
-footer{
+footer {
   border-top: 2.8px solid var(--Black, #232323);
-  background: var(--Yellow, #FDBF1E);
+  background: var(--Yellow, #fdbf1e);
 }
 
 .nav-list {
@@ -68,7 +68,7 @@ nav > ul > li > a {
   text-decoration: none;
 }
 
-nav > ul > li > a:hover{
+nav > ul > li > a:hover {
   padding: 0 15px;
   font-weight: 600;
   color: #f76414;
@@ -78,9 +78,10 @@ nav > ul > li > a:hover{
 .navtoggle li:not(:last-child) {
   display: none;
   justify-content: space-between;
-} 
+}
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
   justify-content: space-between;
 }
@@ -95,23 +96,23 @@ nav > ul > li > a:hover{
   justify-content: space-between;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 4px;
   justify-content: space-between;
 }
 
-.navtoggle.responsive nav{
+.navtoggle.responsive nav {
   padding: 8px 0 0;
   justify-content: space-between;
 }
 
-.navtoggle.responsive li:last-child{
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
   justify-content: space-between;
 }
 
-h1{
+h1 {
   color: var(--Black, #232323);
   font-family: Lexend;
   font-size: 26px;
@@ -121,7 +122,7 @@ h1{
   letter-spacing: 0.78px;
 }
 
-h2{
+h2 {
   color: var(--Black, #232323);
   font-family: "Zilla Slab";
   font-size: 24px;
@@ -133,7 +134,7 @@ h2{
   margin-block-start: 8px;
 }
 
-h3{
+h3 {
   font-family: Lexend;
   font-size: 18px;
   font-weight: 300;
@@ -142,13 +143,13 @@ h3{
   margin-bottom: 8px;
 }
 
-h4{
+h4 {
   font-family: Lexend;
   font-size: 14px;
   font-weight: 500;
 }
 
-h5{
+h5 {
   color: var(--Black, #232323);
   font-family: "Zilla Slab";
   font-size: 26px;
@@ -160,7 +161,7 @@ h5{
   margin-block-start: 80px;
 }
 
-h6{
+h6 {
   color: var(--Black, #232323);
   font-family: Lexend;
   font-size: 52px;
@@ -170,17 +171,6 @@ h6{
   letter-spacing: 0.78px;
   margin-block-end: 8px;
   margin-block-start: 8px;
-}
-
-h7{
-  color: var(--Black, #232323);
-  font-family: Lexend;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.78px;
-  padding-top: 40px;
 }
 
 img {
@@ -195,7 +185,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 780;
+  width: 780px;
 }
 
 .flex-container {
@@ -218,7 +208,7 @@ img {
   flex-direction: column;
 }
 
-.primary-button{
+.primary-button {
   color: var(--Black, #232323);
   font-family: Lexend;
   font-size: 14px;
@@ -228,21 +218,21 @@ img {
   letter-spacing: 0.48px;
   padding: 4px var(--Spacing, 16px);
   transition: all 0.5s;
-  border-radius: 44px;   
+  border-radius: 44px;
   text-decoration: none; /* Añadido para quitar el subrayado */
 }
 
-.primary-button:hover{
- color: #F17B98;
- opacity: 0.8;
+.primary-button:hover {
+  color: #f17b98;
+  opacity: 0.8;
 }
 
-.activenav-btn{
+.activenav-btn {
   background-color: white;
   border-radius: 44px;
 }
 
-.title{
+.title {
   color: var(--Black, #232323);
   font-family: Lexend;
   font-size: 26px;
@@ -254,7 +244,7 @@ img {
   text-align: center;
 }
 
-.subtitle{
+.subtitle {
   color: var(--Black, #232323);
   font-family: Lexend;
   font-size: 26px;
@@ -266,10 +256,10 @@ img {
   max-width: 1200px;
   display: flex;
   text-align: left;
-  width: 780;
+  width: 780px;
 }
 
-.cs-subtitle{
+.cs-subtitle {
   color: var(--Black, #232323);
   font-family: Lexend;
   font-size: 26px;
@@ -281,43 +271,36 @@ img {
   max-width: 1200px;
   display: flex;
   text-align: left;
-  width: 780;
+  width: 780px;
 }
 
-.secondary-button{
+.secondary-button {
   border-radius: 44px;
   border: 2px solid #000;
   font-family: Zilla Slab;
   font-size: 16px;
   font-weight: 400;
-  background: var(--Pink, #F17B98);
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  background: var(--Pink, #f17b98);
+  padding: 4px 16px;
   transition: all 0.5s;
   transition-property: opacity;
   text-decoration: none; /* Añadido para quitar el subrayado */
 }
 
-.secondary-button:hover{
-  background: rgba(238, 179, 28)
+.secondary-button:hover {
+  background: rgba(238, 179, 28);
 }
 
 #secondary-button {/* id selector */
   border-radius: 44px;
   border: 2px solid #000;
-  background: #F17B98;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  transition-property: opacity;
-  transition: all 0.5s;
+  background: #f17b98;
+  padding: 4px 16px;
+  transition: opacity 0.5s ease-in-out;
   text-decoration: none; /* Añadido para quitar el subrayado */
 }
 
-.tertiary-button{
+.tertiary-button {
   color: var(--Black, #232323);
   font-family: "Zilla Slab";
   font-size: 12px;
@@ -328,17 +311,17 @@ img {
   text-decoration: none; /* Añadido para quitar el subrayado */
 }
 
-.tertiary-button:hover{
- opacity: 0.8;
+.tertiary-button:hover {
+  opacity: 0.8;
 }
-  
-ul{
+
+ul {
   list-style: none;
   margin-block-end: 16px;
   margin-block-start: 16px;
 }
 
-.nav-btn{
+.nav-btn {
   font-size: 14px;
   display: inline-block;
   margin: 4px;
@@ -351,8 +334,8 @@ ul{
   margin-top: 20px;
 }
 
-.logo{
-  width: 120px ;
+.logo {
+  width: 120px;
 }
 
 .center {
@@ -363,7 +346,7 @@ ul{
   max-width: 150px;
 }
 
-.row{
+.row {
   margin: 8px 0;
 }
 
@@ -373,34 +356,34 @@ ul{
   display: table;
 }
 
-.social{
+.social {
   text-decoration: none;
 }
 
-.social img{
+.social img {
   height: 40px;
   width: auto;
 }
 
-.profile img{
+.profile img {
   width: 200px;
 }
 
 @keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
+  from { fill: #edc655; }
+  to { fill: #f76414; }
 }
 
-.sun{
+.sun {
   animation: 4s color-change infinite alternate linear;
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from { transform: translate(0, 50px); }
+  to { transform: translate(200px, 50px); }
 }
 
-.cloud-front{
+.cloud-front {
   animation-duration: 30s;
   animation-name: cloud-move;
   animation-iteration-count: infinite;
@@ -409,16 +392,15 @@ ul{
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from { transform: translate(446px, 48px); }
+  to { transform: translate(100px, 48px); }
 }
 
-cloud-back{
+.cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 @media only screen and (min-width: 640px) {
-
   .flex-container {
     max-width: 500px;
     margin-left: auto;
@@ -427,7 +409,7 @@ cloud-back{
     justify-content: space-between;
     flex-direction: column;
   }
-  
+
   .oppening-container {
     max-width: 700px;
     margin-left: auto;
@@ -439,17 +421,17 @@ cloud-back{
     flex-direction: column;
   }
 
-  nav{
+  nav {
     width: auto;
     float: right;
-    maring-top: 4px
+    margin-top: 4px;
   }
 
   nav > ul {
     margin: 1em 0;
   }
 
-  nav > ul > li{
+  nav > ul > li {
     display: inline-block;
   }
 
@@ -463,13 +445,13 @@ cloud-back{
     justify-content: space-between;
   }
 
-  .primary-button{
-    font-size: 16px
+  .primary-button {
+    font-size: 16px;
   }
 
   .col-md-5 {
     width: 50%;
-    }
+  }
 
   .col-md-4 {
     width: 40%;
@@ -486,7 +468,6 @@ cloud-back{
 }
 
 @media only screen and (min-width: 1024px) {
-
   .flex-container {
     max-width: 720px;
     margin-left: auto;
@@ -496,12 +477,12 @@ cloud-back{
     flex-direction: column;
   }
 
-  nav{
+  nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
-  
+
   .oppening-container {
     max-width: 900px;
     margin-left: auto;
@@ -518,8 +499,8 @@ cloud-back{
     justify-content: space-between;
   }
 
-  .primary-button{
-    font-size: 16px
+  .primary-button {
+    font-size: 16px;
   }
 
   .col-md-5 {

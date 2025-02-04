@@ -185,7 +185,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 780px;
+  width: 780;
 }
 
 .flex-container {
@@ -256,7 +256,7 @@ img {
   max-width: 1200px;
   display: flex;
   text-align: left;
-  width: 780px;
+  width: 780;
 }
 
 .cs-subtitle {
@@ -271,7 +271,7 @@ img {
   max-width: 1200px;
   display: flex;
   text-align: left;
-  width: 780px;
+  width: 780;
 }
 
 .secondary-button {

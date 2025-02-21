@@ -401,6 +401,15 @@ ul {
 }
 
 @media only screen and (min-width: 640px) {
+  .container {
+    justify-content: left;
+    display: block;
+  }
+
+  .nav-list {
+    display: block;
+  }
+
   .flex-container {
     max-width: 500px;
     margin-left: auto;

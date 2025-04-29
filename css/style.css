@@ -182,7 +182,6 @@ img {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
   align-items: center;
   justify-content: space-between;
   width: 780;
@@ -398,6 +397,17 @@ ul {
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@media only screen and (max-width: 640px) {
+  .container {
+    justify-content: left;
+    display: block;
+  }
+
+  .nav-list {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 640px) {
